@@ -4,6 +4,7 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = get_num_words(text)
+    print(f"--- Begin report of {book_path}---")
     print(f"{num_words} words found in the document")
     count_words = get_count_words(text)
       
@@ -44,8 +45,9 @@ def sort_on(list_dicts):
 
 def print_list(list):
     for x in list:
-        for var in x.keys():
-            print(f"{var} appears {x[var]} times")
+        print(f"The '{x["key"]}' character awas found {x["value"]} times")
+
+    print("-- End Report --")
 
 
 main()
