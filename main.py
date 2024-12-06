@@ -1,7 +1,7 @@
 
 def main():
     
-    book_path = "books/frankenstein.txt"
+    book_path = "books/baby texts.txt"
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     print(f"--- Begin report of {book_path}---")
